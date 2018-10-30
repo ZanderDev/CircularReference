@@ -26,24 +26,31 @@ class BlockSelfAndLazy: NSObject {
 class Person {
     let name: String
 
-    lazy var printName: ()->() = { [unowned self] in
-        print("The name is \(self.name)")
-        //        The name is XiaoMing
-        //        Optional(A4Paper.Person)
-        //        Person deinit XiaoMing
-        //        nil
-    }
+lazy var printName: ()->() = {
+    print("The name is \(self.name)")
+    //        The name is XiaoMing
+    //        Optional(A4Paper.Person)
+    //        nil
+}
 
-    //    lazy var printName: ()->() = { [weak self] in
-    //        guard let strongSelf = self else {
-    //            return
-    //        }
-    //        print("The name is \(strongSelf.name)")
-    ////        The name is XiaoMing
-    ////        Optional(A4Paper.Person)
-    ////        Person deinit XiaoMing
-    ////        nil
-    //    }
+//    lazy var printName: ()->() = { [unowned self] in
+//        print("The name is \(self.name)")
+//        //        The name is XiaoMing
+//        //        Optional(A4Paper.Person)
+//        //        Person deinit XiaoMing
+//        //        nil
+//    }
+
+//    lazy var printName: ()->() = { [weak self] in
+//        guard let strongSelf = self else {
+//            return
+//        }
+//        print("The name is \(strongSelf.name)")
+////        The name is XiaoMing
+////        Optional(A4Paper.Person)
+////        Person deinit XiaoMing
+////        nil
+//    }
 
     init(personName: String) {
         name = personName

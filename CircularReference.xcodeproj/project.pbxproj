@@ -14,6 +14,10 @@
 		FF72A50D2187EF4B0084FD89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF72A50B2187EF4B0084FD89 /* LaunchScreen.storyboard */; };
 		FF72A5182187EF4B0084FD89 /* CircularReferenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF72A5172187EF4B0084FD89 /* CircularReferenceTests.swift */; };
 		FF72A5232187EF4B0084FD89 /* CircularReferenceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF72A5222187EF4B0084FD89 /* CircularReferenceUITests.swift */; };
+		FF72A5362187EFDC0084FD89 /* BlockSelfAndLazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF72A5322187EFDC0084FD89 /* BlockSelfAndLazy.swift */; };
+		FF72A5382187EFDC0084FD89 /* BlockSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF72A5332187EFDC0084FD89 /* BlockSelf.swift */; };
+		FF72A53A2187EFDC0084FD89 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF72A5342187EFDC0084FD89 /* Singleton.swift */; };
+		FF72A53C2187EFDC0084FD89 /* CircularReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF72A5352187EFDC0084FD89 /* CircularReference.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		FF72A51E2187EF4B0084FD89 /* CircularReferenceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircularReferenceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF72A5222187EF4B0084FD89 /* CircularReferenceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularReferenceUITests.swift; sourceTree = "<group>"; };
 		FF72A5242187EF4B0084FD89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF72A5322187EFDC0084FD89 /* BlockSelfAndLazy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockSelfAndLazy.swift; sourceTree = "<group>"; };
+		FF72A5332187EFDC0084FD89 /* BlockSelf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockSelf.swift; sourceTree = "<group>"; };
+		FF72A5342187EFDC0084FD89 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		FF72A5352187EFDC0084FD89 /* CircularReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularReference.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 		FF72A5012187EF490084FD89 /* CircularReference */ = {
 			isa = PBXGroup;
 			children = (
+				FF72A5312187EFC90084FD89 /* src */,
 				FF72A5022187EF490084FD89 /* AppDelegate.swift */,
 				FF72A5042187EF490084FD89 /* ViewController.swift */,
 				FF72A5062187EF490084FD89 /* Main.storyboard */,
@@ -123,6 +132,17 @@
 				FF72A5242187EF4B0084FD89 /* Info.plist */,
 			);
 			path = CircularReferenceUITests;
+			sourceTree = "<group>";
+		};
+		FF72A5312187EFC90084FD89 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				FF72A5332187EFDC0084FD89 /* BlockSelf.swift */,
+				FF72A5322187EFDC0084FD89 /* BlockSelfAndLazy.swift */,
+				FF72A5352187EFDC0084FD89 /* CircularReference.swift */,
+				FF72A5342187EFDC0084FD89 /* Singleton.swift */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF72A53C2187EFDC0084FD89 /* CircularReference.swift in Sources */,
 				FF72A5052187EF490084FD89 /* ViewController.swift in Sources */,
 				FF72A5032187EF490084FD89 /* AppDelegate.swift in Sources */,
+				FF72A5362187EFDC0084FD89 /* BlockSelfAndLazy.swift in Sources */,
+				FF72A53A2187EFDC0084FD89 /* Singleton.swift in Sources */,
+				FF72A5382187EFDC0084FD89 /* BlockSelf.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

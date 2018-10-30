@@ -64,8 +64,6 @@ class BlockSelf: NSObject {
             Person deinit A4Paper.BlockSelf.Person
             nil
             */
-
-
         }
 
         init(personName: String) {
